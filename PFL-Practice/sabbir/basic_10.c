@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int main() {
+    float fahrenheit, celsius;
+
+    printf("Enter temperature in Fahrenheit: ");
+    scanf("%f", &fahrenheit);
+
+    // Crucial: Use 5.0 and 9.0 to ensure floating-point division
+    celsius = (fahrenheit - 32.0) * 5.0 / 9.0;
+
+    printf("%.2f Fahrenheit is equal to %.2f Celsius.\n", fahrenheit, celsius);
+}
