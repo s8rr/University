@@ -8,3 +8,4 @@ int main()
 
     printf("%06.2lf %05d %d", a, x, y);
 }
+
