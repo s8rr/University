@@ -1,3 +1,4 @@
+//Write a C program using functions to find the area of a circle where the radius is given.
 #include <stdio.h>
 
 float areaOfCircle(float radius){
