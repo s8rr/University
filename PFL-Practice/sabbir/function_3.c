@@ -1,3 +1,4 @@
+//Write a C program to find the minimum between two numbers using functions.
 #include <stdio.h>
 
 int mini(int a,int b){
