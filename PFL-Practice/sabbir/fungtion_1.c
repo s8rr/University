@@ -1,3 +1,4 @@
+//Write a C program to find the cube of any number using a function.
 #include <stdio.h>
 int cube(int b){
     int cube = b * b * b;
