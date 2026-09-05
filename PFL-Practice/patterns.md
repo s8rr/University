@@ -72,6 +72,7 @@ int main(){
     return 0;
 }
 ```
+### 3. Inverted Pyramid
 ```
 Enter n: 5
 * * * * * 
@@ -80,7 +81,6 @@ Enter n: 5
    * * 
     * 
 ```
-### 3. Inverted Pyramid
 ```c
 #include <stdio.h>
 
