@@ -190,3 +190,27 @@ int main() {
     return 0;
 }
 ```
+Holo Diamond
+```c
+#include <stdio.h>
+
+int main() {
+    int r,c,n;
+    printf("Enter N = ");
+    scanf("%d",&n);
+    for(r = 1;r <=n; r++){
+        for(c = 1;c <=r; c++){
+            if(c==1 || r==n || c==r){
+                printf("*");
+            }
+            else{
+                printf(" ");
+            }
+        }
+        printf("\n");
+    }
+
+
+    return 0;
+}
+```
