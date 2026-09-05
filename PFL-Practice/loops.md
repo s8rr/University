@@ -515,10 +515,9 @@ int main() {
 
     printf("Enter a number: ");
     scanf("%d", &num);
-
+    if(num<0) num = -num;
     original = num;
-
-    while (num != 0) {
+    while (num > 0) {
         digit = num % 10;
         reverse = reverse * 10 + digit;
         num = num / 10;
@@ -532,7 +531,6 @@ int main() {
 
     return 0;
 }
-
 ```
 ### 25. Write a C program to check whether a number is an Armstrong number or not.
 ```c
