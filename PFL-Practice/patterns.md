@@ -120,6 +120,15 @@ int main() {
 }
 ```
 ### Pattern number
+```
+Input - Enter N = 5
+Output -
+1 
+1 2 
+1 2 3 
+1 2 3 4 
+
+```
 ```c
 #include <stdio.h>
 
@@ -136,6 +145,14 @@ int main() {
 
     return 0;
 }
+```
+```
+Input - Enter N = 5
+Output -
+A
+AB
+ABC
+ABCD
 ```
 ### Pattern A AB...
 ```c
