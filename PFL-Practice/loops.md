@@ -475,7 +475,8 @@ int main() {
     printf("Enter a number: ");
     scanf("%d", &num);
 
-    while (num != 0) {
+    if(n<0) n= -n;
+    while (num > 0) {
         digit = num % 10;           
         reverse = reverse * 10 + digit;
         num = num / 10;            
@@ -483,6 +484,7 @@ int main() {
     printf("Reverse of the number = %d\n", reverse);
     return 0;
 }
+
 
 ```
 ### 23. Write a C program to enter a number and print it in words.
