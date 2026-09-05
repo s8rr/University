@@ -214,3 +214,33 @@ int main() {
     return 0;
 }
 ```
+Holo Pyramid 
+```c
+#include <stdio.h>
+
+int main() {
+    int r,c,n = 5;
+    printf("Enter N = %d \n",n);
+    
+    for(r = 1;r <=n; r++){
+        for(c=1;c<=n-r;c++){
+            printf(" ");
+        }
+        for(c = 1;c <=2*r; c++){
+            if(c==1 || r==n || c== 2*r-1 ){
+                printf("*");
+            }
+            else{
+                printf(" ");
+            }
+        }
+        for(c=1;c<=2*n-r;c++){
+            printf(" ");
+        }
+        printf("\n");
+    }
+
+
+    return 0;
+}
+```
