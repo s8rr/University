@@ -393,7 +393,8 @@ int main() {
     printf("Enter a number: ");
     scanf("%d", &n);
 
-    while (n != 0) {
+    if(n<0) n = -n;
+    while (n > 0) {
         n = n / 10;
         count++;
     }
@@ -402,6 +403,7 @@ int main() {
 
     return 0;
 }
+
 
 ```
 ### 21. Write a C program to calculate the sum of the digits of a number.
