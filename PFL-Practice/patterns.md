@@ -121,3 +121,21 @@ int main() {
     return 0;
 }
 ```
+### Pattern A AB...
+```c
+#include <stdio.h>
+
+int main() {
+    int r,c,n;
+    printf("Enter N = ");
+    scanf("%d",&n);
+    for(r = 1;r <=n; r++){
+        for(c = 1;c < r; c++){
+            printf("%c",c+64);
+        }
+        printf("\n ");
+    }   
+
+    return 0;
+}
+```
