@@ -243,6 +243,14 @@ int main() {
     return 0;
 }
 ```
+```
+Enter N = 5
+*
+**
+* *
+*  *
+*****
+```
 Holo Diamond
 ```c
 #include <stdio.h>
