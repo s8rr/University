@@ -193,6 +193,18 @@ int main() {
     return 0;
 }
 ```
+```
+Enter N = 5
+    * 
+   * * 
+  * * * 
+ * * * * 
+* * * * * 
+ * * * * 
+  * * * 
+   * * 
+    * 
+```
 Diamond Shape Pattern
 ```c
 #include <stdio.h>
