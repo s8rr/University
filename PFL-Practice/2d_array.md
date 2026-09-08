@@ -94,6 +94,32 @@ int main(){
 ```
 ### 14. Write a C program to perform Scalar matrix multiplication.
 ```c
+#include <stdio.h>
+
+int main() {
+    int n, scalar;
+    int i, j;
+
+    printf("Enter the order of the matrix: ");
+    scanf("%d", &n);
+
+    printf("Enter the scalar value: ");
+    scanf("%d", &scalar);
+
+    printf("Scalar Matrix:\n");
+
+    for (i = 0; i < n; i++) {
+        for (j = 0; j < n; j++) {
+            if (i == j)
+                printf("%d ", scalar);
+            else
+                printf("0 ");
+        }
+        printf("\n");
+    }
+
+    return 0;
+}
 
 ```
 ### 15. Write a C program to find the sum of a matrix's main/major diagonal elements.
