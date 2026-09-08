@@ -20,17 +20,92 @@ int main(){
 ```
 ### 2. Write a C program to find the sum of all array elements except the index value /element.
 ```c
+#include<stdio.h>
 
+int main(){
+    int i,n,a[1000],sum=0,k;
+    scanf("%d",&n);
+    // array input
+    for(i=0;i<n;i++){
+        scanf("%d",&a[i]);
+    }
+    // k value input
+    scanf("%d",&k);
+    // sum of all element value except k
+    for(i=0;i<n;i++){
+        if(i!=k)
+            sum+=a[i];
+    }
+    printf("%d",sum);
+
+}
 ```
 ### 3. Write a C program to find the maximum/minimum element of an array.
+MAX
 ```c
+#include<stdio.h>
 
+int main(){
+    int i,n,a[1000],max;
+    scanf("%d",&n);
+    // array input
+    for(i=0; i<n; i++){
+        scanf("%d",&a[i]);
+    }
+    // max = index value 0 element
+    max=a[0];
+    // checking if other element are grater then max if so max = that element.
+    for(i=1; i<n; i++){
+        if(max<a[i])
+            max=a[i];
+    }
+    printf("Maximum = %d",max);
+
+}
 
 ```
+MINIMUM
+```c
+#include<stdio.h>
+
+int main(){
+    int i,n,a[1000],min;
+    scanf("%d",&n);
+    // array input
+    for(i=0; i<n; i++){
+        scanf("%d",&a[i]);
+    }
+    // min = index value 0 element
+    min=a[0];
+    // checking if other element are less then min if so min = that element.
+    for(i=1; i<n; i++){
+        if(min>a[i])
+            min=a[i];
+    }
+    printf("Minimum = %d",min);
+
+}
+```
+
 ### 4. Write a C program to count the total number of negative elements in an array.
 ```c
+#include<stdio.h>
 
+int main(){
+    int i,n,a[1000],c=0;
+    scanf("%d",&n);
+    // array input
+    for(i=0;i<n;i++){
+        scanf("%d",&a[i]);
+    }
+    // checking if the value is Negative or not if so c++ mean count + 1 
+    for(i=0;i<n;i++){
+        if(a[i]<0) // a[i] < 0 if true mean its negative
+            c++;
+    }
+    printf("Total Negative = %d",c);
 
+}
 ```
 ### 5. Write a C program to search for an element in an array.
 ```c
