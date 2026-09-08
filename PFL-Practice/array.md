@@ -141,7 +141,7 @@ int main(){
 #include<stdio.h>
 
 int main(){
-    int i,n,a[1000],k,f=0;
+    int i,n,a[1000],k;
     scanf("%d",&n);
     // array input
     for(i=0;i<n;i++){
