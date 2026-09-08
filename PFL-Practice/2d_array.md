@@ -277,15 +277,27 @@ int main(){
 ```
 ### 21. Write a C program to print the first n natural numbers
 ```c
-#include <stdio.h>
-int main() {
-    int n, i;
-    scanf("%d", &n);
+#include<stdio.h>
 
-    for (i = 1; i <= n; i++) {
-        printf("%d ", i);
+int main(){
+
+    int i,j,n,a;
+
+    scanf("%d",&n);
+
+    for(i=0; i<n; i++){
+        a=1;
+
+        for(j=0; j<n-i-1; j++){
+            printf(" ");
+        }
+
+        for(j=0; j<=i; j++){
+            printf("%d ",a);
+            a=a*(i-j)/(j+1);
+        }
+        printf("\n");
     }
-    return 0;
-}
 
+}
 ```
