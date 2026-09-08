@@ -200,7 +200,39 @@ int main(){
 ```
 ### 10. Write a C program to print all unique elements in the array.
 ```c
+#include<stdio.h>
+/*
+input:
+7
+2 3 4 2 3 3 5
+output:
+2 3 4 5
+*/
+int main(){
+    
+    int i,j,n,a[1000],f;
+    scanf("%d",&n);
+    // array input
+    for(i=0; i<n; i++)
+        scanf("%d",&a[i]);
+    // filtering uniqe element 
+    for(i=0; i<n; i++){
+        // f = true
+        f=1;
+        // checking if the element is dup or not if so it will break and wont print.
+        for(j=i-1;j>=0;j--){ // keep in mind it will print every element 1ce 
+            if(a[i]==a[j]){
+                f=0;
+                break;
+            }
+        }
+        if(f==1) printf("%d ",a[i]);
+    }
 
+}
+```
+OR
+```
 
 ```
 ### 11. Write a C program to sort the elements of an array in ascending or descending order.
