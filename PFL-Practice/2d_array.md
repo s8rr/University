@@ -1,4 +1,4 @@
-### 1. Write a C program to add two matrices.
+### 12. Write a C program to add two matrices.
 ```c
 #include<stdio.h>
 
@@ -62,7 +62,7 @@ int main(){
 
 
 ```
-### 2. Write a C program to check whether two matrices are equal.
+### 13. Write a C program to check whether two matrices are equal.
 ```c
 #include <stdio.h>
 int main() {
@@ -76,7 +76,7 @@ int main() {
 }
 
 ```
-### 3. Write a C program to perform Scalar matrix multiplication.
+### 14. Write a C program to perform Scalar matrix multiplication.
 ```c
 #include <stdio.h>
 int main() {
@@ -90,7 +90,7 @@ int main() {
 }
 
 ```
-### 4. Write a C program to find the sum of a matrix's main/major diagonal elements.
+### 15. Write a C program to find the sum of a matrix's main/major diagonal elements.
 Major
 ```c
 #include<stdio.h>
@@ -111,7 +111,7 @@ int main(){
     printf("%d",sum);
 }
 ```
-### 5. Write a C program to find the sum of the minor diagonal elements of a matrix.
+### 16. Write a C program to find the sum of the minor diagonal elements of a matrix.
 ```c
 #include<stdio.h>
 
@@ -131,7 +131,7 @@ int main(){
     printf("%d",sum);
 }
 ```
-### 6. Write a C program to print the first n natural numbers
+### 17. Write a C program to print the first n natural numbers
 ```c
 #include <stdio.h>
 int main() {
@@ -145,7 +145,7 @@ int main() {
 }
 
 ```
-### 7. Write a C program to print the first n natural numbers
+### 18. Write a C program to print the first n natural numbers
 ```c
 #include <stdio.h>
 int main() {
@@ -159,7 +159,7 @@ int main() {
 }
 
 ```
-### 8. Write a C program to print the first n natural numbers
+### 19. Write a C program to print the first n natural numbers
 ```c
 #include <stdio.h>
 int main() {
@@ -173,7 +173,7 @@ int main() {
 }
 
 ```
-### 9. Write a C program to print the first n natural numbers
+### 20. Write a C program to print the first n natural numbers
 ```c
 #include <stdio.h>
 int main() {
@@ -187,7 +187,7 @@ int main() {
 }
 
 ```
-### 10. Write a C program to print the first n natural numbers
+### 21. Write a C program to print the first n natural numbers
 ```c
 #include <stdio.h>
 int main() {
