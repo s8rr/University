@@ -233,7 +233,35 @@ int main(){
 ```
 OR
 ```
-
+#include<stdio.h>
+/*
+input:
+5
+1 2 3 3 9
+output:
+1 2 9
+*/
+int main(){
+    
+    int i,j,n,a[1000],f;
+    scanf("%d",&n);
+    // array input
+    for(i=0; i<n; i++)
+        scanf("%d",&a[i]);
+    // filtering uniqe element 
+    for(i=0; i<n; i++){
+        // f = true
+        f=1;
+        // checking if the element is dup or not if so it will break and wont print.
+        for(j=0;j<n;j++){ // keep in mind it will only print element that is not dup. 
+            if(a[i]==a[j]&&i!=j){
+                f=0;
+                break;
+            }
+        }
+        if(f==1) printf("%d ",a[i]);
+    }
+}
 ```
 ### 11. Write a C program to sort the elements of an array in ascending or descending order.
 ```c
