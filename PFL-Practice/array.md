@@ -361,7 +361,7 @@ int main(){
 }
 ```
 OR
-```
+```c
 #include<stdio.h>
 /*
 input:
