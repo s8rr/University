@@ -360,6 +360,28 @@ int main(){
 ```
 ### 11. Write a C program to sort the elements of an array in ascending or descending order.
 ```c
+#include<stdio.h>
 
+int main()
+{
+   int n,i,j,a[1000],t;
+   scanf("%d",&n);
+
+   for(i=0;i<n;i++){
+    scanf("%d",&a[i]);
+   }
+   for(i=0;i<n;i++){
+        for(j=i+1;j<n;j++){
+            if(a[i]>a[j]){
+                t=a[i];
+                a[i]=a[j];
+                a[j]=t;
+            }
+        }
+   }
+   for(i=0;i<n;i++){
+    printf("%d ",a[i]);
+   }
+}
 
 ```
