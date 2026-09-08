@@ -64,17 +64,33 @@ int main(){
 ```
 ### 13. Write a C program to check whether two matrices are equal.
 ```c
-#include <stdio.h>
-int main() {
-    int n, i;
-    scanf("%d", &n);
+#include<stdio.h>
 
-    for (i = 1; i <= n; i++) {
-        printf("%d ", i);
+int main(){
+
+    int i,j,r,c,a[100][100],b[100][100],f=1;
+    scanf("%d %d",&r,&c);
+    for(i=0; i<r; i++){}
+        for(j=0; j<c; j++){
+            scanf("%d",&a[i][j]);
+        } 
+    for(i=0; i<r; i++){}
+        for(j=0; j<c; j++){
+            scanf("%d",&b[i][j]);
+        }
+    for(i=0; i<r; i++){
+        for(j=0; j<c; j++){
+            if(a[i][j]!=b[i][j]){
+                f=0;
+                break;
+            }
+        }
+        if(f==0) break; //optional
     }
-    return 0;
-}
+    if(f==1) printf("Equal");
+    else printf("Not Equal");
 
+}
 ```
 ### 14. Write a C program to perform Scalar matrix multiplication.
 ```c
@@ -131,18 +147,36 @@ int main(){
     printf("%d",sum);
 }
 ```
-### 17. Write a C program to print the first n natural numbers
+### 17. Write a C program to find the transpose of a matrix. (row will be Column & Column will be row)
 ```c
-#include <stdio.h>
-int main() {
-    int n, i;
-    scanf("%d", &n);
+#include<stdio.h>
 
-    for (i = 1; i <= n; i++) {
-        printf("%d ", i);
+int main(){
+
+    int i,j,r,c,a[100][100],tr[100][100];
+
+    scanf("%d %d",&r,&c);
+    for(i=0; i<r; i++){
+        for(j=0; j<c; j++){
+            scanf("%d",&a[i][j]);
+        }
+            
+    } 
+    for(i=0; i<r; i++){
+        for(j=0; j<c; j++){
+            tr[j][i]=a[i][j];
+        }
     }
-    return 0;
+    for(i=0; i<c; i++){
+        for(j=0; j<r; j++){
+            printf("%d ",tr[i][j]);
+        }
+        printf("\n");
+    }
+
 }
+
+
 
 ```
 ### 18. Write a C program to print the first n natural numbers
