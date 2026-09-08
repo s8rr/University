@@ -94,20 +94,31 @@ int main(){
 ```
 ### 14. Write a C program to perform Scalar matrix multiplication.
 ```c
-#include <stdio.h>
-int main() {
-    int n, i;
-    scanf("%d", &n);
+#include<stdio.h>
 
-    for (i = 1; i <= n; i++) {
-        printf("%d ", i);
-    }
-    return 0;
+int main()
+{
+    int i,j,r,c,a[100][100],count=0;
+
+    scanf("%d %d",&r,&c);
+
+    for(i=0; i<r; i++)
+        for(j=0; j<c; j++)
+            scanf("%d",&a[i][j]);
+
+    for(i=0; i<r; i++)
+        for(j=0; j<c; j++)
+            if(a[i][j]==0)
+                count++;
+
+    if(count > (r*c)/2) // r*c to get the total element count
+        printf("Sparse Matrix"); // and r*c/2 to get the 50% element count and if count > 50% its a Sparse Matrix
+    else
+        printf("Not a Sparse Matrix");
+
 }
-
 ```
 ### 15. Write a C program to find the sum of a matrix's main/major diagonal elements.
-Major
 ```c
 #include<stdio.h>
 
