@@ -361,9 +361,10 @@ int main(){
 ### 11. Write a C program to sort the elements of an array in ascending or descending order.
 ```c
 #include<stdio.h>
+// index pick -->> OL (i)
+// checking -->> IL(j)
+int main(){
 
-int main()
-{
    int n,i,j,a[1000],t;
    scanf("%d",&n);
 
