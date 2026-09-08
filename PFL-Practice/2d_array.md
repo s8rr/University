@@ -245,17 +245,35 @@ int main(){
 ```
 ### 20. Write a C program to print the first n natural numbers
 ```c
-#include <stdio.h>
-int main() {
-    int n, i;
-    scanf("%d", &n);
+#include<stdio.h>
 
-    for (i = 1; i <= n; i++) {
-        printf("%d ", i);
+int main(){
+
+    int i,j,r,c,a[100][100],count=0;
+
+    scanf("%d %d",&r,&c);
+    // array input
+    for(i=0; i<r; i++){
+        for(j=0; j<c; j++){
+            scanf("%d",&a[i][j]);
+        }
     }
-    return 0;
-}
+    // checking if the eliment is 0 or not. if == 0 count else dont.
+    for(i=0; i<r; i++){
+        for(j=0; j<c; j++){
+            if(a[i][j]==0)
+                count++;
+        }
+    }
+            
+    if(count > (r*c)/2){
+        printf("Sparse Matrix");
+    }
+    else{
+        printf("Not a Sparse Matrix");
+    }
 
+}
 ```
 ### 21. Write a C program to print the first n natural numbers
 ```c
