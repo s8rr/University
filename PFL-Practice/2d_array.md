@@ -94,29 +94,7 @@ int main(){
 ```
 ### 14. Write a C program to perform Scalar matrix multiplication.
 ```c
-#include<stdio.h>
 
-int main()
-{
-    int i,j,r,c,a[100][100],count=0;
-
-    scanf("%d %d",&r,&c);
-
-    for(i=0; i<r; i++)
-        for(j=0; j<c; j++)
-            scanf("%d",&a[i][j]);
-
-    for(i=0; i<r; i++)
-        for(j=0; j<c; j++)
-            if(a[i][j]==0)
-                count++;
-
-    if(count > (r*c)/2) // r*c to get the total element count
-        printf("Sparse Matrix"); // and r*c/2 to get the 50% element count and if count > 50% its a Sparse Matrix
-    else
-        printf("Not a Sparse Matrix");
-
-}
 ```
 ### 15. Write a C program to find the sum of a matrix's main/major diagonal elements.
 ```c
@@ -199,38 +177,6 @@ int main(){
     int i,j,n,a[100][100],c1=0,c0=0;
 
     scanf("%d",&n);
-    for(i=0; i<n; i++){
-        for(j=0; j<n; j++){
-            scanf("%d",&a[i][j]);
-        }
-    }
-            
-    for(i=0; i<n; i++){
-        for(j=0; j<n; j++){
-            if(i==j&&a[i][j]==1){
-                c1++;
-            }
-            else if(i!=j&&a[i][j]==0){
-                c0++;
-            }
-        }
-    }
-
-    if(c1==n && c0==n*n-n) printf("Identity");
-    else printf("Not Identity");
-    
-}
-
-```
-### 19. Write a C program to print the first n natural numbers
-```c
-#include<stdio.h>
-
-int main(){
-
-    int i,j,n,a[100][100],c1=0,c0=0;
-
-    scanf("%d",&n);
     // input for array a
     for(i=0; i<n; i++){
         for(j=0; j<n; j++){
@@ -253,8 +199,9 @@ int main(){
     else printf("Not Identity");
 
 }
+
 ```
-### 20. Write a C program to print the first n natural numbers
+### 19. Write a C program to check whether a matrix is sparse.
 ```c
 #include<stdio.h>
 
@@ -286,7 +233,11 @@ int main(){
 
 }
 ```
-### 21. Write a C program to print the first n natural numbers
+### 20. Write a C program to check whether a matrix is symmetric.
+```c
+
+```
+### 21. Write a C program to print Pascal's triangle up to n rows.
 ```c
 #include<stdio.h>
 
