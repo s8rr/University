@@ -85,51 +85,46 @@ int main(){
     return 0;
 }
 ```
-### 1. 
+### 5. 
 ```c
 
 ```
-### 1. 
+### 6. 
 ```c
 
 ```
-### 1. 
+### 7. Write a C program to find all prime numbers between the given intervals using functions.
 ```c
 
-```
-### 1. 
-```c
+#include <stdio.h>
 
-```
-### 1. 
-```c
+int isPrime(int n){
+    if (n < 2){
+        return 0;
+    }
 
-```
-### 1. 
-```c
+    for (int i = 2; i < n; i++){
+        if (n % i == 0){
+            return 0;
+        }
+    }
 
-```
-### 1. 
-```c
+    return 1;
+}
 
-```
-### 1. 
-```c
+int main()
+{
+    int start, end;
 
-```
-### 1. 
-```c
+    printf("Enter Start & End: ");
+    scanf("%d %d", &start, &end);
 
-```
-### 1. 
-```c
+    for (int i = start; i <= end; i++){
+        if (isPrime(i)){
+            printf("%d ", i);
+        }
+    }
 
-```
-### 1. 
-```c
-
-```
-### 1. 
-```c
-
+    return 0;
+}
 ```
