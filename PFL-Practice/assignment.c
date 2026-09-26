@@ -1,7 +1,6 @@
 #include <stdio.h>
 
-int main()
-{
+int main() {
     int T, L;
     int a[50];
     int i, j, temp;
@@ -35,7 +34,7 @@ int main()
             }
         }
 
-        printf("%d\n", swaps);
+        printf("Optimal train swapping takes %d swaps.\n", swaps);
     }
 
     return 0;
