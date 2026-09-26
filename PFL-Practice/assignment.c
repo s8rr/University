@@ -1,41 +1,25 @@
 #include <stdio.h>
 
 int main() {
-    int T, L;
-    int a[50];
-    int i, j, temp;
-    int swaps;
-
+    int i, j, t, T, n, a[50], swaps;
     scanf("%d", &T);
-
-    while(T--)
-    {
-        scanf("%d", &L);
-
-        for(i = 0; i < L; i++)
-        {
+    while(T--) {
+        scanf("%d", &n);
+        for(i = 0; i < n; i++) {
             scanf("%d", &a[i]);
         }
-
         swaps = 0;
-
-        for(i = 0; i < L - 1; i++)
-        {
-            for(j = 0; j < L - 1 - i; j++)
-            {
-                if(a[j] > a[j + 1])
-                {
-                    temp = a[j];
-                    a[j] = a[j + 1];
-                    a[j + 1] = temp;
-
+        for(i = 0; i < n; i++) {
+            for(j = i + 1; j < n; j++) {
+                if(a[i] > a[j]) {
+                    t = a[i];
+                    a[i] = a[j];
+                    a[j] = t;
                     swaps++;
                 }
             }
         }
-
         printf("Optimal train swapping takes %d swaps.\n", swaps);
     }
-
     return 0;
 }
