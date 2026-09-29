@@ -162,8 +162,7 @@ int isPrime(int n){
     return 1;
 }
 
-int main()
-{
+int main(){
     int start, end;
 
     printf("Enter Start & End: ");
