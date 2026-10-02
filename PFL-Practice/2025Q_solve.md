@@ -33,6 +33,11 @@ int main()
     }  
 }
 ```
+```console
+1 1
+3 6
+6 14
+```
 c. Write a C program to generate the following sequence:
 ```console
 1  3  7  13  21  31  43  . . . nth term
