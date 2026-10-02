@@ -64,32 +64,23 @@ a. A number n is called a beautiful number if the following conditions hold:
 (n % 7 == 0) != (n % 5 == 0)
 ```
 
-b. Rewrite the following code using WHILE loop:
+b. Write down the output of the following C program.
 ```c
-#include <stdio.h>  
-int main()  
+#include<stdio.h>  
+void main ()  
 {  
-    int i, j, k;  
-    for(i=0, j=0, k=0; i<3; i++){
-  
-        printf("%d %d %d\n", i, j, k);  
-        j += 2;  
-        k += 3;  
+    int i;  
+    for(i=0;i<10;i++)  
+    {  
+        i = 2*i + 1;  
+        printf("%d  ",i);  
+        if( i % 5 == 0) i -= 2;
     }  
-}
-```
-```c
-#include <stdio.h>  
-int main() {  
+} 
 
-    int i=0, j=0, k=0;
-    while(i<3){
-        printf("%d %d %d\n", i, j, k);  
-        j += 2;  
-        k += 3;  
-        i++;
-    }
-}
+```
+```console
+1  5  9 
 ```
 c. Write a C program to find all factors of a number.
 ```c
