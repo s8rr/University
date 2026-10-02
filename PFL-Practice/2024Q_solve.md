@@ -82,26 +82,90 @@ void main ()
 ```console
 1  5  9 
 ```
-c. Write a C program to find all factors of a number.
+c. Write a C program that takes a string as input and check whether the string is palindrome or not.
 ```c
+## sir's version
 #include <stdio.h>
+#include <string.h>
 
 int main() {
-    int n, i;
+    int i, l;
+    char st[1000], rv[1000];
 
-    printf("Enter a number: ");
-    scanf("%d", &n);
+    gets(st);
+    l = strlen(st);
 
-    printf("Factors of %d are: ", n);
+    for(i = 0; i < l; i++)
+        rv[l - 1 - i] = st[i];
 
-    for (i = 1; i <= n; i++) {
-        if (n % i == 0) {
-            printf("%d ", i);
-        }
-    }
+    rv[l] = '\0';
+
+    if(strcmp(st, rv) == 0)
+        printf("Palindrome");
+    else
+        printf("Not Palindrome");
+
+    return 0;
+}
+
+```
+```c
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    int i, l;
+    char st[1000], rv[1000];
+
+    fgets(st, sizeof(st), stdin);
+    st[strcspn(st, "\n")] = '\0';
+
+    l = strlen(st);
+
+    for(i = 0; i < l; i++)
+        rv[l - 1 - i] = st[i];
+
+    rv[l] = '\0';
+
+    if(strcmp(st, rv) == 0)
+        printf("Palindrome");
+    else
+        printf("Not Palindrome");
 
     return 0;
 }
 
 ```
 
+## Q3. 
+a.Rewrite the following code snippet using IF-ELSEIF ladder:
+```c
+    char op;
+    int num1, num2, result=0;
+    scanf("%d %c %d", &num1, &op, &num2);
+    switch(op){
+        case '*': result = num1 * num2;
+                      break;
+         case '/': result = num1 / num2;
+                      break;
+         default: printf("Invalid operator");}
+    printf("%d %c %d = %d", num1, op, num2, result);
+}
+
+```
+```c
+char op;
+int num1, num2, result = 0;
+
+scanf("%d %c %d", &num1, &op, &num2);
+
+if (op == '*')
+    result = num1 * num2;
+else if (op == '/')
+    result = num1 / num2;
+else
+    printf("Invalid operator");
+
+printf("%d %c %d = %d", num1, op, num2, result);
+
+```
