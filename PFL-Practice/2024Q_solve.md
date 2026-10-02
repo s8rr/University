@@ -212,3 +212,63 @@ int main() {
 }
 
 ```
+## Q4. 
+a. Mention the significance of break and continue keywords in a program
+- break: Immediately stops the loop or switch statement and exits it.
+- continue: Skips the current loop iteration and moves to the next iteration.
+
+b. Write a C program to read 5 integer numbers and save in Number.txt file
+```c
+#include <stdio.h>
+
+int main() {
+    FILE *fp;
+    int i, num;
+
+    fp = fopen("Number.txt", "w");
+
+    for (i = 0; i < 5; i++) {
+        scanf("%d", &num);
+        fprintf(fp, "%d\n", num);
+    }
+
+    fclose(fp);
+
+    return 0;
+}
+
+```
+c. Write a C program to sum the number of even and odd integers stored in an array. Your program should read n integers from the user.
+```c
+#include <stdio.h>
+
+int main() {
+    int n, i, a[100], even = 0, odd = 0;
+
+    scanf("%d", &n);
+
+    for (i = 0; i < n; i++)
+        scanf("%d", &a[i]);
+
+    for (i = 0; i < n; i++) {
+        if (a[i] % 2 == 0)
+            even += a[i];
+        else
+            odd += a[i];
+    }
+
+    printf("%d %d", even, odd);
+
+}
+
+```
+
+## Q5. 
+a. Mention the significance of break and continue keywords in a program
+b. Mention the significance of break and continue keywords in a program
+c. Mention the significance of break and continue keywords in a program
+
+## Q6. 
+a. Mention the significance of break and continue keywords in a program
+b. Mention the significance of break and continue keywords in a program
+c. Mention the significance of break and continue keywords in a program
