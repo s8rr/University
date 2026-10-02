@@ -1,16 +1,5 @@
-### 1. Write a C program to find the cube of any number using a function.
+### Q1. a. Write a one-line statement using the conditional operator (?:) to print “ODD” if the number a is odd, otherwise print “EVEN”.
+
 ```c
-#include <stdio.h>
-int cube(int b){
-    int cube = b * b * b;
-    return cube;
-}
-
-int main(){
-    int c,is;
-    scanf("%d",&c);
-
-    is = cube(c);
-    printf("cube is : %d",is);
-}
+printf("%s", (a % 2 == 0) ? "EVEN" : "ODD");
 ```
