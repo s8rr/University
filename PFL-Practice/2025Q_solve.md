@@ -1,6 +1,22 @@
 ## Q1. 
 a. Write a C program to enter two numbers in variables a & b and swap their values without using a temporary/extra variable.
 ```c
+#include <stdio.h>
+
+int main() {
+    int a, b;
+
+    scanf("%d %d", &a, &b);
+
+    a = a + b;
+    b = a - b;
+    a = a - b;
+
+    printf("a = %d\n", a);
+    printf("b = %d", b);
+
+    return 0;
+}
 
 ```
 b. Write down the output of the following C program.
