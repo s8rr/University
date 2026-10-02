@@ -42,3 +42,20 @@ c. Write a C program to generate the following sequence:
 ```console
 1  3  7  13  21  31  43  . . . nth term
 ```
+```c
+#include <stdio.h>
+
+int main() {
+    int n, i, term = 1, diff = 2;
+
+    scanf("%d", &n);
+
+    for (i = 1; i <= n; i++) {
+        printf("%d ", term);
+        term += diff;
+        diff += 2;
+    }
+
+    return 0;
+}
+```
