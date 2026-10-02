@@ -169,3 +169,22 @@ else
 printf("%d %c %d = %d", num1, op, num2, result);
 
 ```
+b. Write down the output of the following C program.
+```c
+#include <stdio.h>
+int main() {
+   int i, sum = 0;
+   for (i = 1; i <= 10; i++) {
+      sum += i; 
+      if (i%4 == 0) 
+         printf("Sum  = %d\n", sum);
+   }
+   printf("Sum = %d", sum);
+   return 0;
+}
+```
+```console
+Sum  = 10
+Sum  = 36
+Sum = 55
+```
