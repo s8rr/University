@@ -330,6 +330,47 @@ int main(){
 }
 ```
 ## Q6. 
-a. Mention the significance of break and continue keywords in a program
-b. Mention the significance of break and continue keywords in a program
-c. Mention the significance of break and continue keywords in a program
+a. Write down the properties of array.
+b. Write down a C program that will generate the following triangle of numbers (using loops).
+```c
+#include <stdio.h>
+int main() {
+    int n;
+    scanf("%d", &n);
+    for (int i = 1; i <= n; i++) {
+        for (int j = 1; j <= i; j++)
+            printf("%d ",j);
+        printf("\n");
+    }
+    return 0;
+}
+```
+c.
+```c
+#include<stdio.h>
+int m = 10;
+void myFunction(int n){
+    int y = 50;
+    y++;
+    printf("%d\n",m+n+y);
+}
+int main(){
+    int x = 5;
+    myFunction(x);
+    m += x;
+    myFunction(3*x);
+    return 0;
+}
+```
+- i. Identify the global and local variables from the code and explain their scopes.
+[Hints: Scopes means the blocks from which the variables are accessible]
+- ii.Write down the output of the given code.
+i
+Global Veriable m (which can be accessed by all the function)
+Local veriable in myFunction are n y (n y can only be accessed by myFunction)
+Local Veriable in main are x (x can only be accessed by main function)
+ii
+```console
+66
+81
+```
