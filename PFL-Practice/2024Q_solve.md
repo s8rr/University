@@ -264,10 +264,71 @@ int main() {
 ```
 
 ## Q5. 
-a. Mention the significance of break and continue keywords in a program
-b. Mention the significance of break and continue keywords in a program
-c. Mention the significance of break and continue keywords in a program
+a. Write down the output of the following C code.
+```c
+int day = 4;
+switch (day) {
+  case 6:
+    printf(“Today is Saturday”);
+    break;
+  case 4:
+    printf(“Today is Sunday”);
+    break;
+  default:
+    printf(“Looking forward to the Weekend”);
+}
 
+```
+```console
+Today is Sunday
+```
+b. Write down the output of the following C program.
+```c
+#include<stdio.h>
+int main(){
+    int i, j, x;
+    for(i=0;i<2;i++){
+        for(j=0;j<3;j++){
+            x= i - 2*j + 1;
+            if(x < 1)
+                continue;
+            else
+                printf("%d\n",x);
+        }
+    }
+    printf("x = %d",x);
+    return 0;
+}
+```
+```console
+1
+2
+x = -2
+```
+c. Write a C program to calculate the sum of the major diagonal and minor diagonal elements of the n-dimensional matrix.
+```c
+#include<stdio.h>
+
+int main(){
+
+    int i,j,n,a[100][100],majsum=0,minsum=0;
+    scanf("%d",&n);
+
+    for(i=0; i<n; i++){        
+        for(j=0; j<n; j++){
+            scanf("%d",&a[i][j]);
+        }
+    }
+    for(i=0; i<n; i++){
+            majsum+= a [i][i]; 
+    }
+    printf("Sum of major diagonal = %d\n",majsum);
+        for(i=0; i<n; i++){
+            minsum+= a [i][n-1-i]; 
+    }
+    printf("Sum of minor diagonal = %d",minsum);
+}
+```
 ## Q6. 
 a. Mention the significance of break and continue keywords in a program
 b. Mention the significance of break and continue keywords in a program
