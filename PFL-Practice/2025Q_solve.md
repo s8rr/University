@@ -60,7 +60,7 @@ int main() {
 }
 ```
 ## Q2. 
-b. Write a C program to take an integer (n) as input and print whether n is an Abundant number
+c. Write a C program to take an integer (n) as input and print whether n is an Abundant number
 ```c
 #include <stdio.h>
 
@@ -75,5 +75,30 @@ int main() {
     if(sum>n){
         printf("Abundant number");
     }
+}
+```
+## Q3.
+
+b. Write down a C program that will generate the following triangle of n lines (using loops).
+```c
+1
+2 2
+3 3 3
+4 4 4 4 
+5 5 5 5 5
+```
+```c
+#include <stdio.h>
+
+int main() {
+    int r,c,n;
+    scanf("%d",&n);
+    for(r=1;r<=n;r++){
+        for(c=1;c<=r;c++){
+            printf("%d ",r);
+        }
+        printf("\n");
+    }
+    
 }
 ```
