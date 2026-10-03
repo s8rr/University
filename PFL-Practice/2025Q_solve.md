@@ -59,3 +59,21 @@ int main() {
     return 0;
 }
 ```
+## Q2. 
+b. Write a C program to take an integer (n) as input and print whether n is an Abundant number
+```c
+#include <stdio.h>
+
+int main() {
+    int n,i,sum=0;
+    scanf("%d",&n);
+    for(i=1;i<=n;i++){
+        if(n%i==0){
+            sum+=i;
+        }
+    }
+    if(sum>n){
+        printf("Abundant number");
+    }
+}
+```
