@@ -64,3 +64,15 @@ In short:
 - ptr → stores the address
 - *ptr → gives the value at that address
 - &num → gives the address of num
+
+### Differentiate between a character and a string in C. What is the purpose of the null character '\0' in a string?
+| Character | String |
+|---|---|
+| A character is a single symbol. | A string is a sequence of characters. |
+| Declared using `char`. | Declared using a `char` array. |
+| Written inside single quotes `' '`. | Written inside double quotes `" "`. |
+| Example: `char ch = 'A';` | Example: `char str[] = "Hello";` |
+| Stores one character. | Stores multiple characters and ends with `'\0'`. |
+
+### Purpose of the Null Character '\0'
+The null character '\0' marks the end of a string in C. It tells C where the string ends
