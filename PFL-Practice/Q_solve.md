@@ -14,3 +14,23 @@ int main(){
     printf("%d",Factorial(x));
 }
 ```
+### Write a c program to read 5 integer numbers and save in Number.txt file
+```c
+#include <stdio.h>
+
+int main() {
+    FILE *file;
+    int num, i;
+
+    file = fopen("Number.txt", "w");
+
+    for (i = 0; i < 5; i++) {
+        scanf("%d", &num);
+        fprintf(file, "%d\n", num);
+    }
+
+    fclose(file);
+    return 0;
+}
+
+```
