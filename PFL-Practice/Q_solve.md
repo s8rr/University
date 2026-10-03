@@ -76,3 +76,28 @@ In short:
 
 ### Purpose of the Null Character '\0'
 The null character '\0' marks the end of a string in C. It tells C where the string ends
+
+### Write a C program to toggle the case of vowels of a string.
+```c
+#include<stdio.h>
+#include<string.h>
+#include<ctype.h>
+
+int main(){
+    int i, l;
+    char st[1000];
+    scanf( "%[^\n]", st);
+    l=strlen(st);
+    for(i=0;i<l;i++){
+        if(toupper(st[i])=='A' || toupper(st[i])=='E' || toupper(st[i])=='I' || toupper(st[i])=='O' || toupper(st[i])=='U' ){
+            if(islower(st[i])){
+                st[i]-=32;
+            }
+            else{
+                st[i]+=32;
+            }
+        }
+    }
+    printf("%s",st);
+}
+```
