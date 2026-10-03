@@ -101,3 +101,27 @@ int main(){
     printf("%s",st);
 }
 ```
+### Write a c program that checks if a string is Palindrome or not
+
+```c
+#include<stdio.h>
+#include<string.h>
+#include<ctype.h>
+
+int main(){
+    int i, l;
+    char st[1000],rv[1000];
+    scanf( "%[^\n]", st);
+    l=strlen(st);
+    for(i=0;i<l;i++){
+        rv[l-1-i]=st[i];
+    }
+    rv[l]='\0';
+    if(strcmp(st,rv)==0){
+        printf("Palindrome");
+    }
+    else{
+        printf("Not Palindrome");
+    }
+}
+```
