@@ -106,7 +106,6 @@ int main(){
 ```c
 #include<stdio.h>
 #include<string.h>
-#include<ctype.h>
 
 int main(){
     int i, l;
