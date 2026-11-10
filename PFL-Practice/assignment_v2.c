@@ -39,7 +39,6 @@ int main() {
     for(i = 0; i < T; i++) {
         fprintf(file, "Optimal train swapping takes %d swaps.\n", results[i]);
     }
-
     fclose(file);
     return 0;
 }
