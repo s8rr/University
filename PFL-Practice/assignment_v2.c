@@ -8,7 +8,6 @@ int trainSwapping(int a[], int n) {
                 t = a[j];
                 a[j] = a[j + 1];
                 a[j + 1] = t;
-
                 swaps++;
             }
         }
