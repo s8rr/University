@@ -23,6 +23,7 @@ int main(){
 #include<stdio.h>
 
 int main(){
+
     int i,n,a[1000],sum=0,k;
     scanf("%d",&n);
     // array input
@@ -46,6 +47,7 @@ MAX
 #include<stdio.h>
 
 int main(){
+
     int i,n,a[1000],max;
     scanf("%d",&n);
     // array input
