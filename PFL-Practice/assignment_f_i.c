@@ -9,7 +9,6 @@ int trainSwapping(int a[], int n) {
                 t = a[j];
                 a[j] = a[j + 1];
                 a[j + 1] = t;
-
                 swaps++;
             }
         }
@@ -20,7 +19,6 @@ int trainSwapping(int a[], int n) {
 int main() {
     FILE *file;
     int T, n, i, a[50], swaps;
-
     file = fopen("input.txt", "r");
 
     if(file == NULL) {
