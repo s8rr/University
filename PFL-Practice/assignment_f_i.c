@@ -27,7 +27,6 @@ int main() {
     }
 
     fscanf(file, "%d", &T);
-
     while(T--) {
         fscanf(file, "%d", &n);
 
